@@ -5,14 +5,16 @@
 #ifndef curecoin_UINT256_H
 #define curecoin_UINT256_H
 
+#include <cstdint>
 #include <limits.h>
 #include <stdio.h>
 #include <string.h>
 #include <string>
 #include <vector>
 
-typedef long long  int64;
-typedef unsigned long long  uint64;
+// technically not standard outside namespace std
+using std::int64_t;
+using std::uint64_t;
 
 
 inline int Testuint256AdHoc(std::vector<std::string> vArg);

@@ -338,6 +338,7 @@ std::string real_strprintf(const std::string &format, int dummy, ...)
     return str;
 }
 
+// TODO: consider c++ exceptions?
 bool error(const char *format, ...)
 {
     va_list arg_ptr;

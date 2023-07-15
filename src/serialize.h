@@ -813,6 +813,7 @@ public:
 
     void insert(iterator it, const_iterator first, const_iterator last)
     {
+        // TODO: assert only runs in debug, is this intended behavior?
         assert(last - first >= 0);
         if (it == vch.begin() + nReadPos && (unsigned int)(last - first) <= nReadPos)
         {

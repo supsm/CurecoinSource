@@ -172,7 +172,7 @@ public:
     CService addrLocal;
     int nVersion;
     std::string strSubVer;
-    bool fOneShot;
+    bool fOneShot; // TODO: delete?
     bool fClient;
     bool fInbound;
     bool fNetworkNode;
